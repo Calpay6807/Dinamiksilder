@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+  .logo p{
+    width: 100%;
+    max-width: 100px;
+    z-index: 999; 
+   color: #fff;
+   background: transparent;
+   border-radius: 50%;
+ 
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0; left: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 100px;
+   transition: all ease 0.5;
+   z-index: 99999;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 15px;
+
+}
+header ul li a{
+    color: rgb(254, 252, 252);
+    transition: all ease 0.5s;
+    font-weight: 500;
+}
+
+header:hover{
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.5s all;
+
+}
+
+header:hover a{
+    color: black;
+}
+
+header:hover p{
+    color: rgb(60, 18, 19);
+}
+
+/* header bitiş */
+
+/*! content start */
+.content{
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.content .item{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: all ease 0.8s;
+}
+
+.content .item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.content  .item:hover{
+width: 200%;
+}
+
+.content .item .text{
+   position: absolute;
+   left: 0;
+   bottom: -50px;
+   width: 100%;
+   height: 100%;
+   padding: 50px 50px 100px;
+   color: #fff;
+   display: flex;
+   align-items: flex-end;
+   opacity: 0;
+   transition: all ease 0.5s 0.2s;
+}
+
+.content .item:hover .text{
+    opacity: 1;
+    bottom: 0;
+}
+
+.content .item .text h3{
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.content .item .text a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.content .item .text a span{
+    color: #fff;
+    display: inline-block;
+    transition: all ease 2s;
+}
+.content .item .text a:hover span{
+    transform: rotate(3360deg);
+   
+}
+
